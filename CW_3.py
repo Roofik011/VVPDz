@@ -1,6 +1,5 @@
 from typing import List
 
-
 def syracuse_sequence(n: int) -> List[int]:
 
     "Возвращает сиракузскую последовательность для заданного числа n."
@@ -40,12 +39,10 @@ def main():
             print("Работа программы завершена.")
             break
 
-        # Проверка ввода
         if not user_input.isdigit() or int(user_input) <= 0:
             print("Ошибка: введите положительное целое число.")
             continue
 
-        # Основная логика
         n = int(user_input)
         sequence = syracuse_sequence(n)
         max_value = syracuse_max(n)
